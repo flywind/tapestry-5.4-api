@@ -66,13 +66,15 @@ public class AppModule
         configuration.add(SymbolConstants.HMAC_PASSPHRASE, "change this immediately");
         //configuration.add(SymbolConstants.BOOTSTRAP_ROOT, "classpath:");
         
-        configuration.add(SymbolConstants.COMBINE_SCRIPTS, false);
+        configuration.add(SymbolConstants.COMBINE_SCRIPTS, true);
     	
-    	configuration.add(SymbolConstants.COMPRESS_WHITESPACE, false);
+    	configuration.add(SymbolConstants.COMPRESS_WHITESPACE, true);
         
-    	configuration.add(SymbolConstants.GZIP_COMPRESSION_ENABLED, false);
+    	configuration.add(SymbolConstants.GZIP_COMPRESSION_ENABLED, true);
     	
     	configuration.add(SymbolConstants.ASSET_URL_FULL_QUALIFIED, true);
+    	
+    	configuration.add(SymbolConstants.ENABLE_PAGELOADING_MASK, false);
     	
     	configuration.add(SymbolConstants.ASSET_PATH_PREFIX, "assets");
         
