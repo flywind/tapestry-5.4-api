@@ -1,0 +1,27 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Multiple Forms</h3>
+		<p>
+		<form t:type="form" t:id="searchcustomers">
+			<t:errors/>
+			Customer Name: 
+			<input t:type="TextField" t:id="customerName" t:validate="required, maxlength=10" size="10"/> 
+			<input type="submit" value="Search Customers"/>
+		</form><br/>
+		 
+		<form t:type="form" t:id="searchsuppliers">
+			<t:errors/>
+			Supplier Name: 
+			<input t:type="TextField" t:id="supplierName" t:validate="required, maxlength=10" size="10"/> 
+			<input type="submit" value="Search Suppliers"/>
+		</form>
+		</p>
+		<p>
+		References: <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Form.html" target="_blank">Form</a>,
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/TextField.html" target="_blank">TextField</a>,
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Errors.html" target="_blank">Errors</a>,
+    <a href="http://wiki.apache.org/tapestry/Tapestry5HowToUseForms" target="_blank">How To Use Forms</a>, 
+    <a href="http://tapestry.apache.org/forms-and-validation.html" target="_blank">Forms and Validation</a>.
+		</p>
+	</div>
+</html>

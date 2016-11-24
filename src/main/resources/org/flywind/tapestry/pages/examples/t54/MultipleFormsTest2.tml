@@ -1,0 +1,6 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>${yourSearch}</h3>
+		<a t:type="pagelink" t:page="examples/t54/MultipleFormsTest" href="#">Back</a>
+	</div>
+</html>

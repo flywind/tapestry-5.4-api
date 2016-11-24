@@ -1,0 +1,13 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Ajax Eventlink</h3>
+		<p><a href="#;" id="addBtn">Add</a></p>
+		<h4>
+			<t:zone t:id="addZone" id="addZone">
+				${count}
+			</t:zone>
+		</h4>
+		<p><a href="#;" id="timeBtn">Time now</a></p>
+		<h4 id="nowTime"></h4>
+	</div>
+</html>

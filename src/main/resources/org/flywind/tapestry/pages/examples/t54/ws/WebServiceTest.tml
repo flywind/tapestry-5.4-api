@@ -1,0 +1,14 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Webservice</h3>
+		<p><t:pagelink page="examples/t54/ws/PersonFind" context="literal:1">PersonFind/1</t:pagelink></p>
+		<p>
+		References: 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/PageLink.html" target="_blank">PageLink</a>, 
+    <a href="http://en.wikipedia.org/wiki/Java_Architecture_for_XML_Binding" target="_blank">JAXB</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/StreamResponse.html" target="_blank">StreamResponse</a>,
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/Response.html" target="_blank">Response</a>,
+    <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">REST</a>.
+		</p>
+	</div>
+</html>

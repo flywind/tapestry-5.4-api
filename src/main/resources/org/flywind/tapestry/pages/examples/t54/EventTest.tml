@@ -1,0 +1,8 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Eventlink and Actionlink</h3>
+		<h4>${count}</h4>
+		<p><a href="#;" t:type="eventlink" t:event="eventId" t:context="literal:1">Click the increase of 1, the initial value of 1</a></p>
+     	<p><a href="#;" t:type="actionlink" t:id="actionId" t:context="literal:2">Click the increase of 2, the initial value of 2</a></p>
+	</div>
+</html>

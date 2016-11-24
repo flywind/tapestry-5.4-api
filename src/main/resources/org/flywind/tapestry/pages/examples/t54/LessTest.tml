@@ -1,0 +1,10 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>tapestry5.4 and Less</h3>
+		<p>Less is a CSS pre-processor, and Bootstrap is built on Less, so you might prefer to use Less instead of CSS.
+Tapestry can transform Less to CSS. It will do it automatically, at runtime, if tapestry-webresources and its dependencies are on the runtime classpath.</p>
+		<p>Use <code>@Import</code> include *.less to your application.</p>
+		<p><code>@Import(stylesheet={"styles/less.less"})</code></p>
+		<div class="fbox">Hello <span class="fwarm">tapestry5.4</span></div>
+	</div>
+</html>

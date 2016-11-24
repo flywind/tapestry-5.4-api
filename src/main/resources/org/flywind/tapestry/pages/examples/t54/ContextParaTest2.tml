@@ -1,0 +1,9 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Parameters</h3>
+		<div class="fbox">
+			${info}
+		</div>
+		<p><a href="#;" t:type="pagelink" t:page="examples/t54/ContextParaTest">Back</a></p>
+	</div>
+</html>

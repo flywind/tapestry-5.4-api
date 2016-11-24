@@ -1,0 +1,10 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Persist and SSO</h3>
+		<p>Welcome ${myName}</p>
+		<p>
+			<a href="#" t:type="pagelink" t:page="examples/t54/PsTest">Back</a>
+		</p>
+		
+	</div>
+</html>

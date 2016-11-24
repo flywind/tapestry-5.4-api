@@ -1,0 +1,9 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Activation Context</h3>
+		<p>Context value is flywind</p>
+		<div class="fbox">
+			<t:pagelink t:page="examples/t54/ContextTest2" t:context="${name}">Click here</t:pagelink>
+		</div>
+	</div>
+</html>

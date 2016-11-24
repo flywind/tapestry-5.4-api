@@ -1,0 +1,21 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry and Html Form</h3>
+		<h3 id="muName"></h3>
+		<div class="fbox">
+			<form id="meform" class="form-horizontal">
+				<div class="form-group">
+	                <label class="col-sm-2">Name</label>
+	                <div class="col-sm-4">
+	                    <input type="text" id="name" name="name" class="form-control"/>
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <div class="col-sm-4 col-sm-offset-2">
+	                    <buttom class="btn btn-block btn-info" id="myBtn" type="buttom">submit</buttom>
+	                </div>
+	            </div>
+			</form>
+		</div>
+	</div>
+</html>

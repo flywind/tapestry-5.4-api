@@ -1,0 +1,18 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Methods</h3>
+		<p><code>setupRender()</code>Tapestry will call it right before it starts rendering.</p>
+		<p><code>beginRender()</code>Tapestry will call it begin rendering.</p>
+		<p><code>afterRender()</code>Tapestry will call it after rendering.</p>
+		<p><code>clearupRender()</code>Tapestry will call it clearup rendering.</p>
+		<p><code>onPrepare()</code>This method is called when the initialization is used to bean</p>
+		<p><code>onActivate()</code>Tapestry will call it when a request from a browser involves your page.</p>
+		<p><code>onPassivate()</code>Transfer parameters, similar to the eventlink, context values of the pagelink parameters</p>
+		<div><img src="${context:images/tapestrynex.png}"/></div>
+		
+		<p>References:
+    	<a href="http://tapestry.apache.org/component-rendering.html#ComponentRendering-RenderingPhases" target="_blank">Rendering Phases</a>, 
+    	<a href="http://tapestry.apache.org/component-rendering.html#ComponentRendering-SetupRender" target="_blank">SetupRender</a>, 
+    	<a href="http://tapestry.apache.org/component-rendering.html#ComponentRendering-CleanupRender" target="_blank">CleanupRender</a>.<br/><br/></p>
+	</div>
+</html>

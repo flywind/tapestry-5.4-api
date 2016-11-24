@@ -1,0 +1,40 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Context(Transfer of different types of values)</h3>
+		<p><code>t:context="[anInt,aLong,aString,aDouble,aBigDecimal,aBoolean,'create']"</code></p>
+		<div class="fbox">
+			<p><t:eventlink t:event="showMessage" t:zone="myZone" context="[anInt,aLong,aString,aDouble,aBigDecimal,aBoolean,'create']">点击这里</t:eventlink></p>
+		    <t:zone t:id="myZone" id="myZone">
+		    	<div class="row">
+		            <div class="col-sm-2 lbl">anInt2:</div>
+		            <div class="col-sm-10">${anInt2}</div>
+		        </div>
+		        <div class="row">
+		            <div class="col-sm-2 lbl">aLong2:</div>
+		            <div class="col-sm-10">${aLong2}</div>
+		        </div>
+		        <div class="row">
+		            <div class="col-sm-2 lbl">aString2:</div>
+		            <div class="col-sm-10">${aString2}</div>
+		        </div>
+		        <div class="row">
+		            <div class="col-sm-2 lbl">aDouble2:</div>
+		            <div class="col-sm-10">${aDouble2}</div>
+		        </div>
+		        <div class="row">
+		            <div class="col-sm-2 lbl">aBigDecimal2:</div>
+		            <div class="col-sm-10">${aBigDecimal2}</div>
+		        </div>
+		        <div class="row">
+		            <div class="col-sm-2 lbl">aBoolean2:</div>
+		            <div class="col-sm-10">${aBoolean2}</div>
+		        </div>
+		        <div class="row">
+		            <div class="col-sm-2 lbl">aString3:</div>
+		            <div class="col-sm-10">${aString3}</div>
+		        </div>
+		    </t:zone>
+		
+		</div>
+	</div>
+</html>

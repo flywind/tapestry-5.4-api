@@ -1,0 +1,24 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Javascript RequireJS Module</h3>
+		<div class="fbox">
+		<t:form class="form-inline" autofocus="false">
+	            <div class="form-group">
+	                <t:textfield t:id="firstName" t:mixins="TextMessage" 
+	                    TextMessage.text="Enter First Name" TextMessage.color="#808080"/>
+	            </div>
+	            <div class="form-group">
+	                <t:textfield t:id="lastName" t:mixins="TextMessage" 
+	                    TextMessage.text="Enter Last Name" TextMessage.color="#808080"/>
+	            </div>
+	    </t:form>
+		</div>
+		<p>
+		References: 
+    <a href="http://tapestry.apache.org/javascript.html" target="_blank">Tapestry JavaScript</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/javascript/JavaScriptSupport.html" target="_blank">JavaScriptSupport</a>, 
+    <a href="http://requirejs.org" target="_blank">RequireJS</a>, 
+    <a href="http://api.jquery.com" target="_blank">jQuery API</a>.
+		</p>
+	</div>
+</html>

@@ -1,0 +1,19 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Output(get)</h3>
+		<p><code>getSiteInfo()</code>get+SiteInfo</p>
+		<div class="fbox">
+			<p>${siteInfo}</p>
+			<p><t:output format="todayFormat" value="mytime"/></p>
+		</div>
+		<h3>Output(setupRender)</h3>
+		<p><code>setupRender()</code>Annotation for fields for which accessor methods (getters and setters) should be created<code>@Property</code></p>
+		<div class="fbox">${msg}</div>
+		<h3>Output(outputraw)</h3>
+		<p>Used to output raw markup to the client. Unlike, say, an expansion, the output from OutputRaw is unfiltered, with any
+  special characters or entities left exactly as is. This is used in situations where the markup is provided
+  externally, rather than constructed within Tapestry.</p>
+		<div class="fbox"><t:outputraw value="${html}"/></div>
+		<p>References:  <a href="http://tapestry.apache.org/component-templates.html#ComponentTemplates-Expansions" target="_blank">Expansions</a>.</p>
+	</div>
+</html>

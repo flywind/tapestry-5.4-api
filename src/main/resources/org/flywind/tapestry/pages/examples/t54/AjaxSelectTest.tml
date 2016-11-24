@@ -1,0 +1,54 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Ajax Select</h3>
+		<p>
+			<t:form t:id="searchCriteria">
+    			<t:errors globalOnly="true"/>
+	            <div class="form-group form-inline">
+	            
+	                <div class="form-group">
+	                    <t:zone t:id="cityZone" id="cityZone" style="display: inline;">
+	                        <t:label for="city"/>
+	                        <t:select t:id="city" model="citys" blankOption="ALWAYS" blankLabel="Choose..." validate="required" secure="never"
+	                            zone="countyZone"/>
+	                    </t:zone>
+	                </div>
+	
+	                <div class="form-group">
+	                    <t:zone t:id="countyZone" id="countyZone" style="display: inline;">
+	                        <t:label for="county"/>
+	                        <t:select t:id="county" model="countys" blankOption="ALWAYS" blankLabel="Choose..." validate="required" secure="never"
+	                            zone="townsZone"/>
+	                    </t:zone>
+	                </div>
+	
+	                <div class="form-group">
+	                    <t:zone t:id="townsZone" id="townsZone" style="display: inline;">
+	                        <t:label for="town"/>
+	                        <t:select t:id="town" model="towns" blankOption="ALWAYS" blankLabel="Choose..." validate="required" secure="never"/>
+	                    </t:zone>
+	                </div>
+	
+	            </div>
+	
+	            <div class="form-group">
+	                <t:submit value="Save"/>
+	            </div>
+	        </t:form>
+		</p>
+		<p>
+		References: 
+    <a href="http://tapestry.apache.org/ajax-and-zones.html" target="_blank">Ajax and Zones</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Zone.html" target="_blank">Zone</a>,
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Select.html" target="_blank">Select</a>,
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/TextField.html" target="_blank">TextField</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/Request.html" target="_blank">Request</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/ajax/AjaxResponseRenderer.html" target="_blank">AjaxResponseRenderer</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/ioc/annotations/Inject.html" target="_blank">@Inject</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/annotations/InjectComponent.html" target="_blank">@InjectComponent</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/zone.html" target="_blank">t5/core/zone</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/ajax.html" target="_blank">t5/core/ajax</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/forms.html" target="_blank">t5/core/forms</a>.
+		</p>
+	</div>
+</html>

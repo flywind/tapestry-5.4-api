@@ -1,0 +1,22 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Zone Ajax Eventlink and Ajax Actionlink</h3>
+		<t:zone t:id="addZone" id="addZone" t:elementName="span">${count}</t:zone><br/>
+		<t:eventlink t:event="add" t:context="literal:2" t:zone="addZone">The initial value is 2, and the increment is 2.</t:eventlink><br/>
+		<t:eventlink t:event="clear">Click here to clear value</t:eventlink><br/>
+		<t:zone t:id="timeZone" id="timeZone" t:visible="false" t:update="highlight">${today}</t:zone><br/>
+		<t:actionlink t:id="serviceTime" t:zone="timeZone">Get now time</t:actionlink><br/>
+		<p>
+		References: 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/EventLink.html" target="_blank">EventLink</a>, 
+    <a href="http://tapestry.apache.org/ajax-and-zones.html" target="_blank">Ajax and Zones</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Zone.html" target="_blank">Zone</a>,
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/ajax/AjaxResponseRenderer.html" target="_blank">AjaxResponseRenderer</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/Request.html" target="_blank">Request</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/ioc/annotations/Inject.html" target="_blank">@Inject</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/annotations/InjectComponent.html" target="_blank">@InjectComponent</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/zone.html" target="_blank">t5/core/zone</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/ajax.html" target="_blank">t5/core/ajax</a>.
+		</p>
+	</div>
+</html>

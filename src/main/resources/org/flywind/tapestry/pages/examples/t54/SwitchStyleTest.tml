@@ -1,0 +1,16 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Switchable Stylesheets</h3>
+		<div class="fbox">
+			<p class="mycolor">Switchable Stylesheets</p>
+			<p><t:eventlink t:event="change">Click here to Switchable Stylesheets</t:eventlink></p>
+		</div>
+		<p>
+		References: 
+    <a href="http://www.w3.org/Style/CSS/" target="_blank">Cascading Style Sheets</a>, 
+    <a href="http://tapestry.apache.org/css.html" target="_blank">Tapestry CSS Support</a>, 
+    <a href="http://tapestry.apache.org/assets.html" target="_blank">Assets</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/javascript/JavaScriptSupport.html" target="_blank">JavaScriptSupport</a>.
+		</p>
+	</div>
+</html>

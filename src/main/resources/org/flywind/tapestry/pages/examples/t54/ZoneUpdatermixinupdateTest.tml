@@ -1,0 +1,40 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry AJAX ZoneUpdater Mixin(Ajax mixin)</h3>
+		<div class="fbox">
+		<t:form class="form-horizontal">
+	            <div class="form-group">
+	                <t:label for="firstName" class="col-sm-2"/>
+	                <div class="col-sm-4">
+	                    <t:textfield t:id="firstName" t:mixins="zoneUpdater" 
+	                        ZoneUpdater.clientEvent="keyup" ZoneUpdater.event="firstNameChanged" ZoneUpdater.zone="nameZone"/>
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <t:label for="lastName" class="col-sm-2"/>
+	                <div class="col-sm-4">
+	                    <t:textfield t:id="lastName" t:mixins="zoneUpdater" 
+	                        ZoneUpdater.clientEvent="keyup" ZoneUpdater.event="lastNameChanged" ZoneUpdater.zone="nameZone"/>
+	                </div>
+	            </div>
+	    
+	            <t:zone t:id="nameZone" id="nameZone">
+	                Welcome ${name}.
+	            </t:zone><br/>
+	    
+	        </t:form>
+		</div>
+		<p>
+		References: 
+    <a href="http://tapestry.apache.org/ajax-and-zones.html" target="_blank">Ajax and Zones</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Zone.html" target="_blank">Zone</a>,
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/ajax/AjaxResponseRenderer.html" target="_blank">AjaxResponseRenderer</a>, 
+    <a href="http://tinybits.blogspot.com/2010/03/new-and-better-zoneupdater.html" target="_blank">Inge's Zone Updater</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/Request.html" target="_blank">Request</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/ComponentResources.html" target="_blank">ComponentResources</a>, 
+    <a href="http://tapestry.apache.org/current/apidocs/org/apache/tapestry5/annotations/InjectComponent.html" target="_blank">@InjectComponent</a>, 
+    <a href="http://tapestry.apache.org/current/apidocs/org/apache/tapestry5/ioc/annotations/Inject.html" target="_blank">@Inject</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/zone.html" target="_blank">t5/core/zone</a>.
+		</p>
+	</div>
+</html>

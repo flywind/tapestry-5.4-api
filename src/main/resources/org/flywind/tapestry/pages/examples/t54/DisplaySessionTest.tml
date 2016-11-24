@@ -1,0 +1,29 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Display Session Contents</h3>
+		<div class="fbox">
+			<t:if test="hasSession">
+	                <h4>Session Contents</h4>
+	                <dl>
+	                    <t:if test="!session.attributeNames.size()">
+	                        Session is null.
+	                    </t:if>
+	                    <t:loop source="session.attributeNames" value="attributeName">
+	                        <dt>${attributeName}</dt>
+	                        <dd>
+	                            <t:renderobject object="attributeValue"/>
+	                        </dd>
+	                    </t:loop>
+	                </dl>
+	            </t:if>
+	            <t:if test="!hasSession">
+	                	Not Session.
+	            </t:if>
+		</div>
+		<p>
+		References: <a href="http://tapestry.apache.org/persistent-page-data.html" target="_blank">Persistent Page Data</a>, 
+    <a href="http://tapestry.apache.org/session-storage.html" target="_blank">Session Storage</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/RenderObject.html" target="_blank">RenderObject</a>.
+		</p>
+	</div>
+</html>

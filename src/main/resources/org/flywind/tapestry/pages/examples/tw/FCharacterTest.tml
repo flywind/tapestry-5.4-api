@@ -1,0 +1,51 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+      <h3>${message:compoment-desc}</h3>
+<table class="tapestry-tab" border="0">
+  <thead>
+    <tr>
+      <th>${message:grid-name}</th>
+      <th>${message:grid-type}</th>
+      <th>${message:grid-symbol}</th>
+      <th>${message:grid-default}</th>
+      <th>${message:grid-default-prefix}</th>
+      <th>${message:grid-since}</th>
+      <th>${message:grid-desc}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>String</td>
+      <td>Required,Not Null</td>
+      <td>space</td>
+      <td>literal</td>
+      <td>1.0</td>
+      <td>${message:desc1}</td>
+    </tr>
+    <tr>
+      <td>count</td>
+      <td>int</td>
+      <td></td>
+      <td></td>
+      <td>literal</td>
+      <td>1.0</td>
+      <td>${message:desc2}</td>
+    </tr>
+  </tbody>
+  <tfoot><tr><td colspan="7">${message:grid-info}</td></tr></tfoot>
+</table>
+<p>Hello<t:widgets.fcharacter type="space" count="15"/>kitty.</p>
+<p>
+<t:widgets.fcharacter type="leftQuotes"/>
+<t:widgets.fcharacter type="rightQuotes"/>
+<t:widgets.fcharacter type="brokenLine"/>
+<t:widgets.fcharacter type="shortBrokenLine"/>
+<t:widgets.fcharacter type="pound"/>
+<t:widgets.fcharacter type="euro"/>
+<t:widgets.fcharacter type="yen"/>
+<t:widgets.fcharacter type="copy"/>
+<t:widgets.fcharacter type="reg"/>
+<t:widgets.fcharacter type="brand"/>
+</p>
+</html>

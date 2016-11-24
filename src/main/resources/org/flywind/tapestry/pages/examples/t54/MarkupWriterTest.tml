@@ -1,0 +1,11 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>MarkupWriter</h3>
+		<p><t:mywriter> Hello Tapestry5.4</t:mywriter></p>
+		<p>
+		References:  
+    <a href="http://tapestry.apache.org/dom.html" target="_blank">DOM</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/MarkupWriter.html" target="_blank">MarkupWriter</a>.
+		</p>
+	</div>
+</html>

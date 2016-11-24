@@ -1,0 +1,172 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+	xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>CRUD</h3>
+		<div class="fbox">
+			<h1>Filter CRUD</h1>
+
+			<div class="eg">
+				<t:eventLink event="toCreate">Create...</t:eventLink>
+				<br />
+				<table id="listAndEditor">
+					<tbody>
+						<tr>
+							<td id="listSide">
+								<div id="listContainer">
+
+									<div id="personFilter">
+										<t:form t:id="filterForm" autofocus="false">
+											<div>
+												Person
+											</div>
+											<div>
+												<t:textfield t:id="partialName" type="search"
+													placeholder="Filter" />
+												<t:submit value="Filter" title="Filter" style="display: none;" />
+											</div>
+										</t:form>
+									</div>
+
+									<div id="personList">
+										<t:grid t:id="list" source="listPersons" row="listPerson"
+											class="table" include="userName"
+											rowsPerPage="4" pagerPosition="bottom" empty="block:emptyPersons">
+											<p:userNameCell>
+												<t:eventLink event="personSelected" context="listPerson.id"
+													class="prop:linkCSSClass">
+													${listPerson.userName}
+												</t:eventLink>
+											</p:userNameCell>
+										</t:grid>
+									</div>
+
+									<t:block t:id="emptyPersons">
+										<div id="noPersons">
+											(No persons found)
+										</div>
+									</t:block>
+
+								</div>
+							</td>
+							<td id="editorSide">
+
+								<t:if test="modeCreate">
+
+									<h1>Create</h1>
+
+									<t:form t:id="createForm" class="form-horizontal"
+										validate="editorPerson">
+										<t:errors globalOnly="true" />
+										<t:delegate to="block:editor" />
+
+										<div class="form-group">
+											<div class="col-sm-4 col-sm-offset-4">
+												<t:submit value="Save" />
+												<t:eventlink event="cancelCreate" class="btn btn-default">Cancel</t:eventlink>
+											</div>
+										</div>
+									</t:form>
+
+								</t:if>
+
+								<t:if test="modeReview">
+
+									<h1>Review</h1>
+
+									<t:if test="editorPerson">
+										<div t:type="if" t:test="deleteMessage" class="error">
+											${deleteMessage}
+										</div>
+
+										<t:beandisplay object="editorPerson" include="id,userName"
+											add="startDateX">	
+											<p:startDateX>
+												<t:output value="editorPerson.createTime" format="prop:dateFormat" />
+											</p:startDateX>
+										</t:beandisplay>
+
+										<div class="buttons">
+											<t:eventlink event="toUpdate" context="editorPerson.id">Update...</t:eventlink>
+											<t:if test="one">
+												<p:else>
+													<t:eventlink event="delete"
+														context="editorPerson.id" t:mixins="Confirm"
+														Confirm.message="Delete ${editorPerson.userName}?">Delete...</t:eventlink>
+												</p:else>
+											</t:if>
+
+										</div>
+									</t:if>
+
+									<t:if test="!editorPerson">
+										Person ${editorPersonId} does not exist.
+										<br />
+										<br />
+									</t:if>
+
+								</t:if>
+
+								<t:if test="modeUpdate">
+									<h1>Update</h1>
+									<t:form t:id="updateForm" class="form-horizontal"
+										validate="editorPerson">
+										<t:errors globalOnly="true" />
+
+										<t:if test="editorPerson">
+											<t:delegate to="block:editor" />
+											<div class="form-group">
+												<div class="col-sm-4 col-sm-offset-4">
+													<t:submit value="Save" />
+													<t:eventlink event="cancelUpdate" context="editorPersonId"
+														class="btn btn-default">Cancel</t:eventlink>
+												</div>
+											</div>
+										</t:if>
+
+										<t:if test="!editorPerson">
+											Person ${editorPersonId} does not exist.
+											<br />
+											<br />
+										</t:if>
+									</t:form>
+
+								</t:if>
+
+							</td>
+
+						</tr>
+					</tbody>
+				</table>
+
+				<t:block t:id="editor">
+					<div class="form-group">
+						<t:label for="userName" class="col-sm-4" />
+						<div class="col-sm-4">
+							<t:textfield t:id="userName" value="editorPerson.userName" />
+						</div>
+						<div class="col-sm-4">
+							<p class="form-control-static">
+								(required)
+							</p>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<t:label for="startDate" class="col-sm-4" />
+						<div class="col-sm-4">
+							<t:datefield t:id="startDate" value="editorPerson.createTime"
+								format="prop:dateFormat" />
+						</div>
+						<div class="col-sm-4">
+							<p class="form-control-static">
+								(required, ${datePattern})
+							</p>
+						</div>
+					</div>
+				</t:block>
+
+			</div>
+
+		</div>
+	</div>
+</html>

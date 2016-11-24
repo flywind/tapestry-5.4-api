@@ -1,0 +1,9 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Parameters(The URL parameter is passed)</h3>
+		<p><code>t:parameters="params"</code>params:It is of type map</p>
+		<div class="fbox">
+			<t:pagelink t:page="examples/t54/ContextParaTest2" t:parameters="params">To next page</t:pagelink>
+		</div>
+	</div>
+</html>

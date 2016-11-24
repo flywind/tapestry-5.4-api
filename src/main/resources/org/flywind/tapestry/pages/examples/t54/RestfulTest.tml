@@ -1,0 +1,11 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>JBoss’ RESTEasy</h3>
+		<p><a href="/rest/personbject/1">Person id 1</a></p>
+		<p>
+		References: 
+    <a href="http://resteasy.jboss.org/" target="_blank">JBoss’ RESTEasy</a>, 
+    <a href="http://www.tynamo.org/tapestry-resteasy+guide/" target="_blank">tapestry-resteasy</a>, 
+		</p>
+	</div>
+</html>

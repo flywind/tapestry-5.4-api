@@ -1,0 +1,46 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+<h3>${message:compoment-desc}</h3>
+<table class="tapestry-tab" border="0">
+  <thead>
+    <tr>
+      <th>${message:grid-name}</th>
+      <th>${message:grid-type}</th>
+      <th>${message:grid-symbol}</th>
+      <th>${message:grid-default}</th>
+      <th>${message:grid-default-prefix}</th>
+      <th>${message:grid-since}</th>
+      <th>${message:grid-desc}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>editable</td>
+      <td>boolean</td>
+      <td></td>
+      <td></td>
+      <td>literal</td>
+      <td>1.0</td>
+      <td>${message:desc1}</td>
+    </tr>
+    <tr>
+      <td>params</td>
+      <td>JSONObject</td>
+      <td></td>
+      <td></td>
+      <td>literal</td>
+      <td>1.0</td>
+      <td>${message:desc2}</td>
+    </tr>
+  </tbody>
+  <tfoot><tr><td colspan="7">${message:grid-info}</td></tr></tfoot>
+</table>
+<t:form>
+<div style="width:150px;height:100px;">
+<t:textfield t:id="num" class="easyui-numberspinner" t:mixins="widgets/FNumberSpinner" t:validate="required"/>
+</div>
+<div style="width:150px;height:100px;">
+<t:textfield t:id="mum2" class="easyui-numberspinner" t:mixins="widgets/FNumberSpinner" FNumberSpinner.params="{'editable':false}" t:validate="required"/>
+</div>
+</t:form>
+</html>

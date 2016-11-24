@@ -1,0 +1,45 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>If, Not, Negate, Switch, Else, Unless</h3>
+		<p>
+			<t:if test="field">
+				Hello,this is true.
+				<p:else>
+					Not hello,this is false.
+				</p:else>
+			</t:if>
+		</p>
+		<p>
+			<t:unless test="field">
+				Hello,this is true.
+				<p:else>
+					Not hello,this is false.
+				</p:else>
+			</t:unless>
+		</p>
+		<p>
+			<t:delegate to="myCase"/>
+			<t:block t:id="case1">
+			  	The weather is sunny Monday.
+			 </t:block>
+			 <t:block t:id="case2">
+			  	Tuesday tired ah!
+			 </t:block>
+			 <t:block t:id="case3">
+			  	On Wednesday a busy day.
+			 </t:block>
+			 <t:block t:id="case4">
+			 	 Thursday today did not earn what money ah!
+			 </t:block>
+			 <t:block t:id="case5">
+			  	Friday is an easy day
+			 </t:block>
+			 <t:block t:id="case6">
+			  	Saturday rest
+			 </t:block>
+			 <t:block t:id="case7">
+			  	Sunday tired ah, go to work tomorrow!!!
+			 </t:block>
+		</p>
+	</div>
+</html>

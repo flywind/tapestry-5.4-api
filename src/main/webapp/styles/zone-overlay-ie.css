@@ -1,0 +1,4 @@
+div.zone-ajax-overlay {
+    background-color: silver;
+    filter: alpha(opacity = 50);
+}

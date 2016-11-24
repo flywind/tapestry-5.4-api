@@ -1,0 +1,9 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Create</h3>
+		<div class="fbox">
+			<t:pagelink page="examples/t54/GridTest">Back</t:pagelink>
+			<t:beaneditform t:id="personform" object="person" include="userName,createTime" submitLabel="Add" cancel="true"/>
+		</div>
+	</div>
+</html>

@@ -1,0 +1,13 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Annotations</h3>
+		<p><code>@Parameter(required=true,value="show message",defaultPrefix = BindingConstants.LITERAL)</code>@Parameter:Declares that it is a component parameter. required:Declaration parameters cannot be empty. defaultPrefix = BindingConstants.LITERAL</p>
+		<p><code>@Property</code>@Property:Annotation for fields for which accessor methods (getters and setters) should be created.</p>
+		<p><code>@Inject</code>@Inject:This annotation serves is something of the Swiss Army knife for operations related to injection of dependencies into an arbitrary method of Java Bean. For example : @Inject JavaScriptSupport、componentResources、AjaxResponseRenderer、Request、pring services etc.</p>
+		<p><code>@OnEvent(value = EventConstants.ACTIVATE)</code>You can put this annotation on a method instead of naming the method onActivate.</p>
+		<p><code>@InjectComponent</code>@InjectComponent:Allows components defined in the template to be injected as read-only properties. For example:@InjectComponent Zone、Form、textfield etc.</p>
+		<p><code>@Persist</code>@Persist:Identifies a field as persistent, meaning its value persists from one request to the next. Different strategies exist for how this is accomplished, the most common being the default, "session", which stores the field's value in the session. @Persist(PersistenceConstants.FLASH) The field's value is stored in the session, but only until the next request. This is often used for confirmation messages presented to the user.</p>
+		<p><code>@PageActivationContext</code>Annotation for a field for which the page activation context handlers (onActivate and onPassivate) should be created.</p>
+		<p><code>@InjectContainer</code>@InjectContainer:Used to inject the component which contains this component. For mixins, this injects the component to which the mixin is attached. For example: @InjectContainer private ClientElement clientElement</p>
+	</div>
+</html>

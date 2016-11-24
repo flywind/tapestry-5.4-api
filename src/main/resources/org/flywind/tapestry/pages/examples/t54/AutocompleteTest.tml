@@ -1,0 +1,26 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Autocomplete component</h3>
+		<div class="fbox">
+		<t:form class="form-horizontal">
+	            <div class="form-group">
+	                <t:label for="countryName" class="col-sm-3">
+	                Your country name:
+	                </t:label>
+	                <div class="col-sm-3">
+	                    <t:textfield t:id="countryName" t:mixins="autocomplete"/>
+	                </div>
+	            </div>
+	        </t:form>
+		</div>
+		<p>
+		References: 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/mixins/Autocomplete.html" target="_blank">Autocomplete API</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/autocomplete.html" target="_blank">autocomplete.coffee</a>, 
+    <a href="http://tapestry.apache.org/ajax-and-zones.html#AjaxandZones-autocomplete" target="_blank">(T5.3) Autocomplete Mixin</a>, 
+    <a href="http://twitter.github.io/typeahead.js/" target="_blank">typeahead.js</a>, 
+    <a href="http://tapestry.apache.org/component-mixins.html" target="_blank">Component Mixins</a>, 
+    <a href="http://tapestry.apache.org/defining-tapestry-ioc-services.html" target="_blank">Defining Tapestry IOC Services</a>.
+		</p>
+	</div>
+</html>

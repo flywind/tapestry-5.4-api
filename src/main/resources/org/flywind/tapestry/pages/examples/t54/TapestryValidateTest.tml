@@ -1,0 +1,50 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Validators</h3>
+		<div class="fbox">
+		<t:form class="form-horizontal" autofocus="false">
+	            <div class="form-group">
+	                <t:label for="firstName" class="col-sm-3"/>
+	                <div class="col-sm-3">
+	                    <t:textfield t:id="firstName"/>
+	                </div>
+	                <div class="col-sm-6">
+	                    <p class="form-control-static">
+	                        ${firstName}
+	                        <span class="text-muted">
+	                            (required, maxLength=5, regexp=^[A-Za-z]+$)
+	                        </span>
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <t:label for="lastName" class="col-sm-3"/>
+	                <div class="col-sm-3">
+	                    <t:textfield t:id="lastName" validate="required, maxlength=10"/>
+	                </div>
+	                <div class="col-sm-6">
+	                    <p class="form-control-static">
+	                        ${lastName}
+	                        <span class="text-muted">
+	                            (required, maxLength=10)
+	                        </span>
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <div class="col-sm-3 col-sm-offset-3">
+	                    <t:submit/>
+	                </div>
+	            </div>
+	            
+	        </t:form>	
+		</div>
+		<p>
+		References: 
+    <a href="http://tapestry.apache.org/bean-validation.html" target="_blank">Bean Validation</a>, 
+    <a href="http://docs.oracle.com/javaee/6/api/javax/validation/constraints/package-summary.html" target="_blank">the standard annotations</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Form.html" target="_blank">Form</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/TextField.html" target="_blank">TextField</a>
+		</p>
+	</div>
+</html>

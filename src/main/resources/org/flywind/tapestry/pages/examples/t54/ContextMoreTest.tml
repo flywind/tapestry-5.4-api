@@ -1,0 +1,10 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Context(Pass multiple values)</h3>
+		<p><code>t:context="['Hello ',kitty]"</code></p>
+		<div class="fbox">
+			<t:eventlink t:event="showMsg" t:context="['Hello ',kitty]">Click here.</t:eventlink>
+			<p>${newValue}</p>
+		</div>
+	</div>
+</html>

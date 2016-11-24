@@ -1,0 +1,28 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Grid component</h3>
+		<p>Grid API <a href="http://www.flywind.org/en/blogdetial/90" target="_blank">[TS v1.1]Lesson 15：Tapestry Loop and Grid</a></p>
+		<p>You can change grid stylesheets. For example: <code>class="table table-hover table-bordered table-striped"</code></p>
+		<div class="fbox">
+			<p><a href="#;" t:type="pagelink" t:page="examples/t54/AddPersonTest">Create Person</a></p>
+			<p><t:grid source="persons" exclude="version" rowsPerPage="2" pagerPosition="top"/></p>
+			<p><t:grid t:id="megrid" source="persons" class="table table-hover table-striped" rowsPerPage="2" pagerPosition="top"/></p>
+			<p>
+				<t:grid source="persons" row="person" rowsPerPage="2" pagerPosition="top" t:add="operate">
+					<p:operateHeader>Action</p:operateHeader>
+					<p:operateCell>
+						<a href="#;" t:type="pagelink" t:page="examples/t54/EditPersonTest" t:context="${person.id}">Update</a>
+						<t:if test="numone">
+							<p:else>
+							<a href="#;" style="margin-left:10px;" t:type="eventlink" t:event="del" t:context="${person.id}">Delete</a>
+							</p:else>
+						</t:if>
+					</p:operateCell>
+					<p:userNameHeader>User name Hiiii</p:userNameHeader>
+					<p:userNameCell><a href="#;">${person.userName} I am here</a></p:userNameCell>
+				</t:grid>
+			</p>
+			<p><t:grid source="persons" model="mymodel" exclude="version" rowsPerPage="3" pagerPosition="top"/></p>
+		</div>
+	</div>
+</html>

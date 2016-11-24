@@ -1,0 +1,25 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Return Types</h3>
+		<div class="fbox">
+		<t:eventlink event="returnvoid">void</t:eventlink> - Returns the current page.<br/>
+	        <t:eventlink event="returnnull">null</t:eventlink> - Returns the current page.<br/>
+	        <t:eventlink event="returnfalse">false</t:eventlink> - Returns the current page.<br/>
+	        <t:eventlink event="returntrue">true</t:eventlink> - Returns the current page, cancel the bubbling events.<br/>
+	        <t:eventlink event="returnstring">String (Must be the page name)</t:eventlink> - Jump to the page.<br/>
+	        <t:eventlink event="returnclass">Class (Is the name of the class must be)</t:eventlink> - Jump to the page.<br/>
+	        <t:eventlink event="returnpageinstance">page instance</t:eventlink> - Jump to the page.<br/>
+	        <t:eventlink event="returnlink">Link</t:eventlink> - Jump links with context.<br/>
+	        <t:eventlink event="returnstreamresponse">StreamResponse</t:eventlink> - Component PDFs, returns images, XML and so on. <br/>
+	        <t:eventlink event="returnurl">URL</t:eventlink> - External links such as jump:http://.<br/>
+	        <t:eventlink event="returnhttperror">HttpError</t:eventlink> - Returns the HTTP error.<br/>
+	        
+	        <t:if t:test="message">
+	            <br/>
+	            <div class="alert alert-info">
+	                ${message}
+	            </div>
+	        </t:if>
+		</div>
+	</div>
+</html>

@@ -1,0 +1,32 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Ajax Form</h3>
+		<p>
+			<form t:type="form" t:id="meForm" t:zone="formZone">
+				<t:label for="name"/>
+				<input t:type="textfield" t:id="name" t:validate="required"/>
+				<t:label for="age"/>
+				<input t:type="textfield" t:id="age" t:validate="required"/>
+				<t:submit value="Submit"/>
+			</form>
+		</p>
+		<p>
+			<t:zone t:id="formZone" id="formZone">
+				Hello ${name}, your age is ${age}.
+			</t:zone>
+		</p>
+		<p>
+		References: 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Form.html" target="_blank">Form</a>, 
+    <a href="http://tapestry.apache.org/ajax-and-zones.html" target="_blank">Ajax and Zones</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Zone.html" target="_blank">Zone</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/ajax/AjaxResponseRenderer.html" target="_blank">AjaxResponseRenderer</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/Request.html" target="_blank">Request</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/ioc/annotations/Inject.html" target="_blank">@Inject</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/annotations/InjectComponent.html" target="_blank">@InjectComponent</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/zone.html" target="_blank">t5/core/zone</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/ajax.html" target="_blank">t5/core/ajax</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/forms.html" target="_blank">t5/core/forms</a>.
+		</p>
+	</div>
+</html>

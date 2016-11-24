@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Tapestry 5.4</title>
+</head>
+
+<body class="container">
+	<h3>Tapestry and Bootstrap</h3>
+	<p>By default, Tapestry pages automatically include the <a href="https://getbootstrap.com/" target="_blank">Twitter Bootstrap v3.3.5</a> CSS stylesheets.</p>
+	<p>If your application uses a modified version of Bootstrap,
+      you can override this symbol to have Tapestry automatically use your version. The value should be a path
+      to a folder (under "classpath:" or "context:") and should not include a trailing slash.</p>
+	<p>For example: AppModule.java</p>
+	<p><code>configuration.add(SymbolConstants.BOOTSTRAP_ROOT, "context:mybootstrap");</code></p>
+	<p><div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <span class="sr-only">Error:</span> Enter a valid email address </div></p>
+	<p>In you application it's extremely easy to use Bootstrap libray.</p>
+	<p>For example: AppModule.java</p>
+	<p>
+		<code>
+		configuration.add("app",new JavaScriptModuleConfiguration(app).dependsOn("jquery","bootstrap/tooltip","bootstrap/dropdown","plugin/easyui"));
+		</code>
+	</p>
+	<p>For example: meModule.js</p>
+	<p><code>
+	define(["jquery","t5/core/dom","bootstrap/tooltip"],function($,dom,tooltip){
+		var init;
+		init = function(){
+			//your code
+		};
+		return {
+			pageInit :init
+		}
+	});
+	</code></p>
+</body>
+</html>

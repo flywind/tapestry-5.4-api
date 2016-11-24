@@ -1,0 +1,22 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Loop component</h3>
+		<table class="table table-hover table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>User Name</th>
+				<th>Create Time</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr t:type="loop" source="persons" value="person">
+				<td>${person.id}</td>
+				<td>${person.userName}</td>
+				<td>${person.createTime}</td>
+			</tr>
+		</tbody>
+		</table>
+		<p>References:<a href="http://tapestry.apache.org/current/apidocs/org/apache/tapestry5/corelib/components/Loop.html" target="_blank">Loop</a></p>
+	</div>
+</html>

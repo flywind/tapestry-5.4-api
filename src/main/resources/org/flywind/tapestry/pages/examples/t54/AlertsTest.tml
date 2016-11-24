@@ -1,0 +1,76 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Alerts component</h3>
+		<div class="fbox">
+		<t:alerts showDismissAll="prop:showDismissAll"/>
+		<t:form class="form-horizontal">
+	            <div class="form-group">
+	                <t:label for="duration" class="col-sm-3"/>
+	                <div class="col-sm-6">
+	                    <t:RadioGroup t:id="duration" value="duration" validate="required">
+	                        <t:Radio t:id="durationS" value="Duration.SINGLE" label="Single"/>
+	                        <t:label for="durationS" class="label-radio"/>
+	                        <t:Radio t:id="durationT" value="Duration.TRANSIENT" label="Transient (a few seconds)"/>
+	                        <t:label for="durationT" class="label-radio"/>
+	                        <t:Radio t:id="durationU" value="Duration.UNTIL_DISMISSED" label="Until Dismissed"/>
+	                        <t:label for="durationU" class="label-radio"/>
+	                    </t:RadioGroup><br/>
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <t:label for="severity" class="col-sm-3"/>
+	                <div class="col-sm-6">
+	                    <t:RadioGroup t:id="severity" validate="required">
+	                        <t:Radio t:id="severityI" value="Severity.INFO" label="Info"/>
+	                        <t:label for="severityI" class="label-radio"/>
+	                        <t:Radio t:id="severityS" value="Severity.SUCCESS" label="Success"/>
+	                        <t:label for="severityS" class="label-radio"/>
+	                        <t:Radio t:id="severityW" value="Severity.WARN" label="Warn"/>
+	                        <t:label for="severityW" class="label-radio"/>
+	                        <t:Radio t:id="severityE" value="Severity.ERROR" label="Error"/>
+	                        <t:label for="severityE" class="label-radio"/>
+	                    </t:RadioGroup><br/>
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <t:label for="quantity" class="col-sm-3"/>
+	                <div class="col-sm-6">
+	                    <t:RadioGroup t:id="quantity" validate="required">
+	                        <t:Radio t:id="quantity1" value="literal:1" label="1"/>
+	                        <t:label for="quantity1" class="label-radio"/>
+	                        <t:Radio t:id="quantity2" value="literal:2" label="2"/>
+	                        <t:label for="quantity2" class="label-radio"/>
+	                        <t:Radio t:id="quantity3" value="literal:3" label="3"/>
+	                        <t:label for="quantity3" class="label-radio"/>
+	                    </t:RadioGroup><br/>
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <t:label for="showDismissAll" class="col-sm-3"/>
+	                <div class="col-sm-6">
+	                    <t:RadioGroup t:id="showDismissAll" validate="required">
+	                        <t:Radio t:id="showDismissAllN" value="literal:false" label="No"/>
+	                        <t:label for="showDismissAllN" class="label-radio"/>
+	                        <t:Radio t:id="showDismissAllY" value="literal:true" label="Yes"/>
+	                        <t:label for="showDismissAllY" class="label-radio"/>
+	                    </t:RadioGroup><br/>
+	                </div>
+	            </div>
+	            
+	            <div class="form-group">
+	                <div class="col-sm-6 col-sm-offset-3">
+	                    <t:submit/> 
+	                </div>
+	            </div>
+	        </t:form>
+		</div>
+		<p>
+		References: 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Alerts.html" target="_blank">Alerts</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/alerts/AlertManager.html" target="_blank">AlertManager</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/alerts/Duration.html" target="_blank">Duration</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/alerts/Severity.html" target="_blank">Severity</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/ioc/annotations/Inject.html" target="_blank">@Inject</a>.
+		</p>
+	</div>
+</html>

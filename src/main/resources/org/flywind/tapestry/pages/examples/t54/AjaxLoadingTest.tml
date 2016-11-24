@@ -1,0 +1,28 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry AJAX Loading....</h3>
+		<div class="fbox">
+		<t:form t:zone="mezone">
+			<t:submit/> 
+			<t:eventlink style="margin-left:20px;" t:event="callzone" t:zone="mezone">Ajax call</t:eventlink>
+		</t:form>
+		<t:zone t:id="mezone" id="mezone" style="width:200px;height:200px;">
+			<t:loop source="helloCalls" value="helloCall">
+				${helloCall}<br/>
+			</t:loop>
+		</t:zone>
+		</div>
+		<p>
+		References: 
+    <a href="http://java.dzone.com/articles/adding-ajax-throbbers-zone" target="_blank">Adding 'Ajax Throbbers'</a>, 
+    <a href="http://tapestry.apache.org/javascript.html" target="_blank">Tapestry JavaScript</a>, 
+    <a href="http://www.w3schools.com/css/css3_animations.asp" target="_blank">CSS3 Animations</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/annotations/Import.html" target="_blank">@Import</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/services/javascript/JavaScriptSupport.html" target="_blank">JavaScriptSupport</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/dom.html" target="_blank">t5/core/dom</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/events.html" target="_blank">t5/core/events</a>, 
+    <a href="http://tapestry.apache.org/5.4/coffeescript/zone.html" target="_blank">t5/core/zone</a>,
+    <a href="http://www.jquery4u.com/tools/online-loading-ajax-spinner-generators/" target="_blank">5 Online Loading AJAX Spinner Generator Tools</a>.
+		</p>
+	</div>
+</html>

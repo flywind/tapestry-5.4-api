@@ -1,0 +1,121 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter" xmlns:w="tapestry-library:widgets">
+<h3>${message:compoment-desc}</h3>
+<table class="tapestry-tab" border="0">
+  <thead>
+    <tr>
+      <th>${message:grid-name}</th>
+      <th>${message:grid-type}</th>
+      <th>${message:grid-symbol}</th>
+      <th>${message:grid-default}</th>
+      <th>${message:grid-default-prefix}</th>
+      <th>${message:grid-since}</th>
+      <th>${message:grid-desc}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>multiple</td>
+      <td>boolean</td>
+      <td></td>
+      <td>false</td>
+      <td></td>
+      <td>1.0</td>
+      <td>${message:desc1}</td>
+    </tr>
+    <tr>
+      <td>allowedExtensions</td>
+      <td>String</td>
+      <td></td>
+      <td></td>
+      <td>literal</td>
+      <td>1.0</td>
+      <td>${message:desc2}</td>
+    </tr>
+    <tr>
+      <td>sizeLimit</td>
+      <td>String</td>
+      <td></td>
+      <td>0</td>
+      <td>literal</td>
+      <td>1.0</td>
+      <td>${message:desc3}</td>
+    </tr>
+    <tr>
+      <td>maxConnections</td>
+      <td>int</td>
+      <td></td>
+      <td>3</td>
+      <td></td>
+      <td>1.0</td>
+      <td>${message:desc4}</td>
+    </tr>
+    <tr>
+      <td>params</td>
+      <td>JSONObject</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.0</td>
+      <td>${message:desc5}</td>
+    </tr>
+    <tr>
+      <td>cls</td>
+      <td>String</td>
+      <td></td>
+      <td>btn btn-sm btn-info btn-flat</td>
+      <td>literal</td>
+      <td>1.0</td>
+      <td>${message:desc6}</td>
+    </tr>
+    <tr>
+      <td>itemcls</td>
+      <td>String</td>
+      <td></td>
+      <td>fa fa-upload mr5</td>
+      <td>literal</td>
+      <td>1.0</td>
+      <td>${message:desc7}</td>
+    </tr>
+    <tr>
+      <td>uploadLabel</td>
+      <td>String</td>
+      <td></td>
+      <td>Upload</td>
+      <td>literal</td>
+      <td>1.0</td>
+      <td>${message:desc8}</td>
+    </tr>
+  </tbody>
+  <tfoot><tr><td colspan="7">${message:grid-info}</td></tr></tfoot>
+</table>
+			<w:fajaxUpload t:id="uploadImage" t:multiple="true"
+				t:allowedExtensions="[jpg, png, gif]" t:sizeLimit="1M">
+			</w:fajaxUpload>
+			<w:fajaxUpload t:id="uploadImageTwo" t:multiple="false"
+				t:allowedExtensions="[jpg, png, gif]" t:sizeLimit="1M">
+			</w:fajaxUpload>
+
+			<t:zone t:id="uploadResult">
+					<t:if test="message">
+						<p>
+							<strong>${message}</strong>
+						</p>
+					</t:if>
+
+					<t:if test="uploadedFiles">
+						<t:grid source="uploadedFiles"></t:grid>
+					</t:if>
+			</t:zone>
+			<t:zone t:id="uploadImg">
+				<t:if test="uploadedFile">
+					${uploadedFile.filePath}
+				</t:if>
+			</t:zone>
+			<t:zone t:id="uploadImgNoAjax">
+				<t:if test="uploadedFile">
+					${uploadedFile.filePath}
+				</t:if>
+			</t:zone>
+		
+</html>

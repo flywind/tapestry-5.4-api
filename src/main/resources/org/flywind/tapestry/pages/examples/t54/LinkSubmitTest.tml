@@ -1,0 +1,23 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Linksubmit Component</h3>
+		<h4>${name}</h4>
+		<p>
+			<t:form>
+				<input t:type="textfield" t:id="name"/>
+				<a href="#;" t:type="linksubmit">submit</a>
+			</t:form>
+		</p>
+		<p>
+		References: 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/LinkSubmit.html" target="_blank">LinkSubmit</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Form.html" target="_blank">Form</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/TextField.html" target="_blank">TextField</a>, 
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Submit.html" target="_blank">Submit</a>,
+    <a href="http://tapestry.apache.org/5.4/apidocs/org/apache/tapestry5/corelib/components/Errors.html" target="_blank">Errors</a>, 
+    <a href="http://tapestry.apache.org/forms-and-validation.html" target="_blank">Forms and Validation</a>, 
+    <a href="http://tapestry.apache.org/page-navigation.html" target="_blank">Page Navigation</a>, 
+    <a href="http://tapestry.apache.org/component-events.html" target="_blank">Component Events</a>.
+		</p>
+	</div>
+</html>

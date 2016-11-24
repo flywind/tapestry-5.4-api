@@ -1,0 +1,20 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Persist and SSO</h3>
+		<h4>${persistString}</h4>
+		<p>
+		<t:form>
+	        <input t:type="textfield" tid="persistString" value="persistString"/>
+	        <t:submit value="submit"/>
+        </t:form>
+        </p>
+        <h4>Login(userName:flywind password:123456)</h4>
+		<p>
+			<t:form t:id="loginForm">
+		      <input t:type="textfield" t:id="userName" value="userName"/><br/>
+		      <input t:type="textfield" t:id="password" value="password"/><br/>
+		      <t:submit value="submit"/>
+		     </t:form>
+		</p>
+	</div>
+</html>

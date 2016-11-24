@@ -1,0 +1,22 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+	<div class="container">
+		<h3>Tapestry Form componet</h3>
+		<p><code>autofocus="false"</code>Cancel the focus</p>
+		<h3>${name}</h3>
+		<div class="fbox">
+			<t:form t:id="meform" class="form-horizontal">
+				<div class="form-group">
+	                <t:label for="name" class="col-sm-2"/>
+	                <div class="col-sm-4">
+	                    <t:textfield t:id="name"/>
+	                </div>
+	            </div>
+	            <div class="form-group">
+	                <div class="col-sm-4 col-sm-offset-2">
+	                    <t:submit/>
+	                </div>
+	            </div>
+			</t:form>
+		</div>
+	</div>
+</html>

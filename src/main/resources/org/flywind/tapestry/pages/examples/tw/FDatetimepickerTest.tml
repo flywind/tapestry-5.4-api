@@ -1,0 +1,34 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+<h3>${message:compoment-desc}</h3>
+<table class="tapestry-tab" border="0">
+  <thead>
+    <tr>
+      <th>${message:grid-name}</th>
+      <th>${message:grid-type}</th>
+      <th>${message:grid-symbol}</th>
+      <th>${message:grid-default}</th>
+      <th>${message:grid-default-prefix}</th>
+      <th>${message:grid-since}</th>
+      <th>${message:grid-desc}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>params</td>
+      <td>JSONObject</td>
+      <td></td>
+      <td>{'lang':'ch','format':'Y-m-d','timepicker':false,'datepicker':true,'yearStart':'2000','yearEnd':'2050','todayButton':true}</td>
+      <td></td>
+      <td>1.0</td>
+      <td>${message:desc1}</td>
+    </tr>
+  </tbody>
+  <tfoot><tr><td colspan="7">${message:grid-info}</td></tr></tfoot>
+</table>
+<t:form autofocus="false">
+<t:textfield style="margin-top:15px;width:150px" class="input-time" t:id="name3" t:mixins="widgets/FDatetimepicker" FDatetimepicker.params="{'lang':'en'}"/>
+<t:textfield style="margin-top:15px;width:150px" class="input-time" t:id="name" t:mixins="widgets/FDatetimepicker"/>
+<t:textfield style="margin-top:15px;width:150px" t:id="name2" t:mixins="widgets/FDatetimepicker" FDatetimepicker.params="${options}"/>
+</t:form>
+</html>
