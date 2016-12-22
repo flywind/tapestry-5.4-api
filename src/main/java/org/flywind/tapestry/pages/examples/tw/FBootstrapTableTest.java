@@ -12,11 +12,11 @@ import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.corelib.components.Zone;
 import org.apache.tapestry5.ioc.annotations.Inject;
+import org.flywind.tapestry.base.AppBase;
+import org.flywind.tapestry.business.example.ExampleService;
+import org.flywind.tapestry.entities.example.Example;
 import org.flywind.widgets.WidgetSymbolConstants;
 import org.flywind.widgets.core.dao.FPage;
-import org.flywind.widgets.test.base.AppBase;
-import org.flywind.widgets.test.business.example.ExampleService;
-import org.flywind.widgets.test.entities.example.Example;
 
 @Import(stylesheet="context:assets/styles/demo.css")
 public class FBootstrapTableTest extends AppBase  {
