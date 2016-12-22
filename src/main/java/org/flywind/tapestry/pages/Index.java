@@ -68,6 +68,24 @@ public class Index
     ajaxResponseRenderer.addRender("middlezone", block);
   }
 
+  public void onDelete(EventContext ec){
+	  int num = ec.getCount();
+	  int a = 0;
+	  String b = "",c = "";
+	  if(num > 0){
+		 a = (int) ec.get(Integer.class, 0);
+	  }
+	  
+	  if(num > 1){
+		 b = ec.get(String.class, 1);
+	  }
+	  
+	  if(num > 2){
+		  c = ec.get(String.class, 2);
+	  }
+	  
+	  System.out.println(a);
+  }
 
   public Date getCurrentTime()
   {
