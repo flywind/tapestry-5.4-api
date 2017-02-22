@@ -135,7 +135,7 @@ of testing facilities designed for use with TestNG (http://testng.org/), so it's
 		<dependency>
 		  <groupId>org.flywind</groupId>
 		  <artifactId>tapestry-widgets</artifactId>
-		  <version>1.0</version>
+		  <version>1.0.1</version>
 		</dependency>
 		<!-- 组件库 end -->
 		
