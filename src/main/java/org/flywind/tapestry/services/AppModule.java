@@ -48,7 +48,7 @@ public class AppModule
 
         // This is something that should be removed when going to production, but is useful
         // in the early stages of development.
-        configuration.override(SymbolConstants.PRODUCTION_MODE, false);
+        configuration.override(SymbolConstants.PRODUCTION_MODE, true);
     }
 
     public static void contributeApplicationDefaults(
@@ -92,7 +92,7 @@ public class AppModule
 	{
         // Support for jQuery is new in Tapestry 5.4 and will become the only supported
         // option in 5.5.
-		//configuration.add(SymbolConstants.JAVASCRIPT_INFRASTRUCTURE_PROVIDER, "jquery");
+		configuration.add(SymbolConstants.JAVASCRIPT_INFRASTRUCTURE_PROVIDER, "jquery");
 		configuration.add(SymbolConstants.BOOTSTRAP_ROOT, "context:mybootstrap");
 		//configuration.add(SymbolConstants.MINIFICATION_ENABLED, true);
 	}
